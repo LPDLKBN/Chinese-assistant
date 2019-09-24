@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="wrap">
+  <view class="tool-wrap {{ !switchActive?'':'active' }}">
+    <view id="tool-camera" class="{{ !switchActive?'':'active' }}">
+      <icon class="iconfont icon-camera"></icon>
+    </view>
+    <view id="tool-voice" class="{{ !switchActive?'':'active' }}">
+      <icon class="iconfont icon-mike"></icon>
+    </view>
+    <button bindtap="switchActiveTab" class="tool-switch {{ !switchActive?'':'active' }}">
+      <icon></icon><icon></icon><icon></icon><icon></icon><icon></icon>
+    </button>
+  </view>
+</view>
